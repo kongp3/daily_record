@@ -18,8 +18,8 @@ def record():
 
 
 if __name__ == '__main__':
-    schedule.every().day.at("09:30").do(record())
-    schedule.every().day.at("18:30").do(record())
+    schedule.every().day.at("09:30").do(record)
+    schedule.every().day.at("18:30").do(record)
     while True:
         schedule.run_pending()
         time.sleep(1)
